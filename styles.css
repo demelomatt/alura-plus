@@ -1,0 +1,154 @@
+:root {
+    --main-white: #FFFFFF;
+    --second-grey: #C0C0C0;
+    --blue-button: #167BF7;
+    --background-color: #00030C;
+    --main-font: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-white);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__button{
+    display: block;
+    background-color: var(--blue-button);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--main-white);
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.button_secondary {
+    background-color: transparent;
+    border: 2px solid var(--main-white);
+}
+
+.container__warning {
+    font-size: 12px;
+    color: var(--second-grey);
+}
+
+.container__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__image {
+    margin: 1em 0 2em 0;
+}
+
+.container__box {
+    margin: 0 6em;
+}
+
+.secondary__image {
+    width: 80%;
+}
+
+.secondary {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.description__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--main-white);
+    margin-bottom: 0.1em;
+}
+
+.description__text {
+    color: var(--second-grey);
+}
+
+.secondary_button {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__description {
+    padding: 2em;
+}
+
+.devices {
+    text-align: center;
+}
+
+.devices__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--main-white);
+}
+
+.devices_list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.list__item {
+    font-weight: 700;
+    font-size: 32px;  
+    color: var(--main-white);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em;
+}
+
+.footer {
+    text-align: center;
+    margin: 5em 0;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--second-grey);
+    margin: 2em;
+}
+
+.footer__item {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--main-white);
+    text-decoration: none;
+    margin: 0em 1em;
+}
+
+.footer__item:hover {
+    color: var(--blue-button);
+}
+
+.footer__item:active {
+    color: purple;
+}
